@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header-container {
+  width: 100%;
+  height: 200px;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 20px solid #6b7cc5; }
+  .header-container .title {
+    color: #615a57;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: PatuaOne;
+    letter-spacing: 1px; }
+  .header-container a {
+    text-decoration: none; }
+  .header-container .btn.btn-secondary {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background: #3c45ad; }
+
+@font-face {
+  font-family: 'Calistoga';
+  src: url("../font/Calistoga-Regular.ttf"); }
+
+@font-face {
+  font-family: 'PatuaOne';
+  src: url("../font/PatuaOne-Regular.ttf"); }
+
+.main-container {
+  padding: 40px; }
+  .main-container .content-image {
+    width: 400px; }
+  .main-container .content-text {
+    margin-top: 85px;
+    text-align: left; }
+    .main-container .content-text h1 {
+      margin-bottom: 20px;
+      font-weight: bold; }
+    .main-container .content-text p {
+      margin-bottom: 15px;
+      font-size: larger; }
+
+.courses-container {
+  padding: 40px 0;
+  text-align: left; }
+  .courses-container h1 {
+    font-weight: 600; }
+  .courses-container .table th {
+    font-weight: bold; }
+
+.contact-container {
+  padding: 40px; }
+  .contact-container .list {
+    padding: 15px 25px;
+    border: 8px solid #6b7cc5; }
+    .contact-container .list .list-item {
+      padding-bottom: 18px; }
+      .contact-container .list .list-item:last-child {
+        padding-bottom: 8px; }
+      .contact-container .list .list-item .item-detail {
+        display: block;
+        font-size: larger; }
+        .contact-container .list .list-item .item-detail strong {
+          margin-right: 8px;
+          font-style: italic; }

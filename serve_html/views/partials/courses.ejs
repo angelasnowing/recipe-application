@@ -1,0 +1,29 @@
+<div class="courses-container container col-8"> 
+  <h1>Courses Table</h1>
+  <section>
+    <section class="row">
+      <setion class="col">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col" colspan="2">Description</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (var i = 0; i < courses.length; i++) { %>
+              <tr>
+                <td><%= courses[i].title %></td>
+                <td colspan="2"><%= courses[i].description %></td>
+                <td>Edit</td>
+                <td>Delete</td>
+              </tr>
+            <% } %>  
+          </tbody>
+        </table>
+      </setion>
+    </section>
+  </section>
+</div>

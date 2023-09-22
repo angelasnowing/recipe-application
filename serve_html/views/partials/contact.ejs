@@ -1,0 +1,12 @@
+<div class="contact-container container col-8"> 
+  <section>
+    <ul class="list-group list-group-flush list">
+      <% for (var i = 0; i < contact.length; i++) { %>
+        <li class="list-group-item list-item">
+          <span class="item-detail"><strong>Name: </strong><%= contact[i].name %></span>
+          <span class="item-detail"><strong>Email: </strong><%= contact[i].email %></span>
+        </li>
+      <% } %>
+    </ul>
+  </section>
+</div>

@@ -1,0 +1,65 @@
+.main-container {
+  padding: 40px;
+
+  .content-image {
+    width: 400px;
+  }
+
+  .content-text {
+    margin-top: 85px;
+    text-align: left;
+
+    h1 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: larger;
+    }
+  }
+}
+
+
+.courses-container {
+  padding: 40px 0;
+  text-align: left;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  .table {
+    th {
+      font-weight: bold;
+    }
+  }
+}
+
+.contact-container {
+  padding: 40px;
+
+  .list {
+    padding: 15px 25px;
+    border: 8px solid #6b7cc5;
+
+    .list-item {
+      padding-bottom: 18px;
+
+      &:last-child {
+        padding-bottom: 8px;
+      }
+
+      .item-detail {
+        display: block;
+        font-size: larger;
+
+        strong {
+          margin-right: 8px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

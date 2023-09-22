@@ -1,0 +1,28 @@
+{
+  "name": "recipe-applictaion",
+  "version": "1.0.0",
+  "description": "A application to share recipes.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon main",
+    "sass:compile": "node-sass -w --include-path sass ./serve_html/public/scss/index.scss ./serve_html/public/css/style.css"
+  },
+  "author": "John",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "cities": "^2.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "http-status-codes": "^2.2.0",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.2",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

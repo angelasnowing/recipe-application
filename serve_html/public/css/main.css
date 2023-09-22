@@ -1,0 +1,22 @@
+.main-container {
+  padding: 40px;
+}
+
+.main-container .content-image {
+  width: 400px;
+}
+
+.main-container .content-text {
+  margin-top: 85px;
+  text-align: left;
+}
+
+.main-container .content-text h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.main-container .content-text p {
+  margin-bottom: 15px;
+  font-size: larger;
+}
