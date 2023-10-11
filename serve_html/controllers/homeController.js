@@ -1,40 +1,18 @@
-// import mongoose from "mongoose";
-// import subscriberModel from "../models/subscribers.js"
-// import courseModel from "../models/course.js";
+import mongoose from "mongoose";
+import subscriberModel from "../models/subscribers.js"
+import courseModel from "../models/course.js";
 
-// mongoose.connect("mongodb://localhost:27017/recipe_db")
+mongoose.connect("mongodb://3.27.170.43:27017/recipe_db")
 
-// mongoose.Promise = global.Promise
+mongoose.Promise = global.Promise
 
-// let contact, courses;
+let contact, courses;
 
-// subscriberModel.Subscriber.find().then( result => {
-//   contact = result
-// })
+subscriberModel.Subscriber.find().then( result => {
+  contact = result
+})
 
-// courseModel.Course.find().then( result => courses = result)
-
-let contact = [{
-  name: "Jon",
-  email: "jon@wexler.com"
-}, {
-  name: "Chef Eggplant",
-  email: "eggplant@recipe.com"
-}, {
-  name: "Professor Souffle",
-  email: "souffle@recipe.com"
-}]
-
-let courses = [{
-  title: "Beets sitting at home",
-  description: "Seasonal beets from the guy down the street."
-}, {
-  title: "Barley even listening",
-  description: "Organic wheats and barleys for bread, soup, and fun!"
-},{
-  title: "Peaching to the choir",
-  description: "Get fresh peaches from the local farm."
-}]
+courseModel.Course.find().then( result => courses = result)
 
 const respondHomePage = (req, res) => {
   res.render("index", {page: 'home'})
@@ -66,3 +44,19 @@ export default {
 //   description: "Get fresh peaches from the local farm."
 // }).then( course => console.log(course))
 // .catch( error => console.log(error.message))
+
+// import mongoose from "mongoose";
+// import subscriberModel from "../models/subscribers.js"
+// import courseModel from "../models/course.js";
+
+// mongoose.connect("mongodb://localhost:27017/recipe_db")
+
+// mongoose.Promise = global.Promise
+
+// let contact, courses;
+
+// subscriberModel.Subscriber.find().then( result => {
+//   contact = result
+// })
+
+// courseModel.Course.find().then( result => courses = result)
